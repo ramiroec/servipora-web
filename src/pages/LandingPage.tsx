@@ -12,7 +12,7 @@ export default function LandingPage() {
       </header>
 
       <section className="choice-grid">
-        <Link to="/cliente" className="card choice">
+        <Link to="/login-cliente" className="card choice">
           <div className="card-body">
             <h2>Quiero contratar</h2>
             <p>Encuentra profesionales verificados cerca de ti, compara y agenda.</p>
@@ -20,7 +20,7 @@ export default function LandingPage() {
           <div className="card-footer">Entrar como Cliente</div>
         </Link>
 
-        <Link to="/profesional" className="card choice">
+        <Link to="/login-profesional" className="card choice">
           <div className="card-body">
             <h2>Quiero ofrecer</h2>
             <p>Crea tu perfil, recibe solicitudes y crece tu cartera de clientes.</p>

@@ -3,6 +3,8 @@ import LandingPage from "./pages/LandingPage";
 import Sidebar from "./components/Sidebar";
 import ClienteDashboard from "./pages/cliente/Dashboard";
 import ProfesionalDashboard from "./pages/profesional/DashBoard";
+import LoginCliente from "./pages/cliente/LoginCliente";
+import LoginProfesional from "./pages/profesional/LoginProfesional";
 
 function ClienteLayout() {
   const location = useLocation();
@@ -62,6 +64,9 @@ export default function App() {
         <Route index element={<ProfesionalDashboard />} />
         {/* más rutas del profesional */}
       </Route>
+
+      <Route path="/login-cliente" element={<LoginCliente />} />
+      <Route path="/login-profesional" element={<LoginProfesional />} />
 
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
