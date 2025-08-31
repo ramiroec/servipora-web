@@ -129,7 +129,13 @@ export default function LoginCliente() {
           fontSize: 14,
           textAlign: "center"
         }}>
-          ¿No tienes cuenta? <span style={{ color: "var(--brand-2)", fontWeight: 600 }}>Regístrate pronto</span>
+          ¿No tienes cuenta?{" "}
+          <span
+            style={{ color: "var(--brand-2)", fontWeight: 600, cursor: "pointer" }}
+            onClick={() => navigate("/registro-cliente")}
+          >
+            Regístrate pronto
+          </span>
         </div>
       </div>
     </div>
