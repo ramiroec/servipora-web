@@ -12,9 +12,9 @@ export default function RegistroCliente() {
     direccion: "",
     ciudad_id: ""
   });
-  const [departamentos, setDepartamentos] = useState<{ value: string; label: string }[]>([]);
-  const [ciudades, setCiudades] = useState<{ value: string; label: string }[]>([]);
-  const [departamentoId, setDepartamentoId] = useState<{ value: string; label: string } | null>(null);
+  const [departamentos, setDepartamentos] = useState<any[]>([]);
+  const [ciudades, setCiudades] = useState<any[]>([]);
+  const [departamentoId, setDepartamentoId] = useState<any | null>(null);
   const [error, setError] = useState("");
   const [exito, setExito] = useState("");
   const navigate = useNavigate();
