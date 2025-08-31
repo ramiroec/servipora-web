@@ -129,7 +129,11 @@ export default function LoginProfesional() {
           fontSize: 14,
           textAlign: "center"
         }}>
-          ¿Aún no eres parte? <span style={{ color: "var(--brand)", fontWeight: 600 }}>Regístrate pronto</span>
+          ¿Aún no eres parte? {" "}           
+          <span
+            style={{ color: "var(--brand-2)", fontWeight: 600, cursor: "pointer" }}
+            onClick={() => navigate("/registro-profesional")}
+          >Regístrate pronto</span>
         </div>
       </div>
     </div>

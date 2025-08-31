@@ -6,6 +6,7 @@ import ProfesionalDashboard from "./pages/profesional/DashBoard";
 import LoginCliente from "./pages/cliente/LoginCliente";
 import LoginProfesional from "./pages/profesional/LoginProfesional";
 import RegistroCliente from "./pages/cliente/RegistroCliente";
+import RegistroProfesional from "./pages/profesional/RegistroProfesional";
 
 function ClienteLayout() {
   const location = useLocation();
@@ -69,6 +70,7 @@ export default function App() {
       <Route path="/login-cliente" element={<LoginCliente />} />
       <Route path="/registro-cliente" element={<RegistroCliente />} />
       <Route path="/login-profesional" element={<LoginProfesional />} />
+      <Route path="/registro-profesional" element={<RegistroProfesional />} />
 
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
